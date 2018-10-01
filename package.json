@@ -1,0 +1,36 @@
+{
+  "name": "react-native-header-scroll-view",
+  "version": "1.0.0",
+  "description": "A React Native component that creates a Apple-esque large header that fades in a smaller header as you scroll.",
+  "main": "index.js",
+  "keywords": [
+    "header",
+    "scroll",
+    "react native",
+    "component"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonsamp/react-native-header-scroll-view.git"
+  },
+  "author": "Jon Samp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonsamp/react-native-header-scroll-view/issues"
+  },
+  "homepage": "https://github.com/jonsamp/react-native-header-scroll-view",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "react-native-iphone-x-helper": "^1.2.0"
+  },
+  "devDependencies": {
+    "@babel/preset-flow": "7.0.0",
+    "flow-bin": "0.75.0"
+  }
+}
