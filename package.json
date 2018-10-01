@@ -27,7 +27,7 @@
     "react-native": "*"
   },
   "dependencies": {
-    "react-native-fade": "jonsamp/react-native-fade#master",
+    "react-native-fade": "1.0.1",
     "react-native-iphone-x-helper": "^1.2.0"
   },
   "devDependencies": {

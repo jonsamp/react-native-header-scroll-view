@@ -30,9 +30,9 @@ flow-bin@0.75.0:
   version "0.75.0"
   resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.75.0.tgz#b96d1ee99d3b446a3226be66b4013224ce9df260"
 
-react-native-fade@jonsamp/react-native-fade#master:
-  version "1.0.0"
-  resolved "https://codeload.github.com/jonsamp/react-native-fade/tar.gz/d88e5625c35dd6d379ba6bf0afb88c0937f94152"
+react-native-fade@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-fade/-/react-native-fade-1.0.1.tgz#518ca079ac1df3d6ae734ec42ef28296c97429de"
 
 react-native-iphone-x-helper@^1.2.0:
   version "1.2.0"
