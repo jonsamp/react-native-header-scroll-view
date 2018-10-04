@@ -19,7 +19,7 @@ npm install react-native-header-scroll-view --save
 Then, import with:
 
 ```js
-import Fade from 'react-native-header-scroll-view';
+import Fade from "react-native-header-scroll-view";
 ```
 
 ## Usage
@@ -27,9 +27,9 @@ import Fade from 'react-native-header-scroll-view';
 Example usage:
 
 ```js
-import React, { Component } from 'react';
-import { View, Text, Button } from 'react-native';
-import HeaderScrollView from 'react-native-header-scroll-view';
+import React, { Component } from "react";
+import { View, Text, Button } from "react-native";
+import HeaderScrollView from "react-native-header-scroll-view";
 
 class App extends Component {
   render() {
@@ -60,10 +60,3 @@ From there, you can further customize this component to get exactly what you nee
 | `headerTextStyle`               | React Native style or Object | Styles the header text inside the header that appears after scrolling.                                                  |
 | `headerTitleStyle`              | React Native style or Object | Styles the header title component inside the scroll view.                                                               |
 | `scrollContainerStyle`          | React Native style or Object | Styles the scroll view component.                                                                                       |
-
-If you need complete control, you can fully replace the title and header with your custom components:
-
-| Prop                          | Type       | Description                                                                                               |
-| ----------------------------- | ---------- | --------------------------------------------------------------------------------------------------------- |
-| `customHeaderComponent`       | React Node | Uses your custom component for the header that appears after the scroll position makes the header appear. |
-| `customeHeaderTitleComponent` | React Node | Uses your custom component as the title element within the scroll view.                                   |
