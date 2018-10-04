@@ -1,6 +1,6 @@
 {
   "name": "react-native-header-scroll-view",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React Native component that creates a Apple-esque large header that fades in a smaller header as you scroll.",
   "main": "index.js",
   "keywords": [
