@@ -21,11 +21,11 @@
   "homepage": "https://github.com/jonsamp/react-native-header-scroll-view",
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "prop-types": "*"
   },
   "dependencies": {
-    "prop-types": "^15.5.10",
-    "react-native-fade": "1.0.1",
+    "react-native-fade": "jonsamp/react-native-fade#master",
     "react-native-iphone-x-helper": "^1.2.0"
   }
 }
