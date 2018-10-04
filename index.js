@@ -6,14 +6,12 @@ import styles from "./styles";
 
 class HeaderScrollView extends Component {
   static propTypes = {
-    headerText: PropTypes.string,
+    headerTitle: PropTypes.string,
     children: PropTypes.node,
     containerStyle: PropTypes.object,
     headerContainerStyle: PropTypes.object,
     headerComponentContainerStyle: PropTypes.object,
     headerTextStyle: PropTypes.object,
-    customHeaderComponent: PropTypes.node,
-    customeHeaderTitleComponent: PropTypes.node,
     headerTitleStyle: PropTypes.object,
     scrollContainerStyle: PropTypes.object
   };
@@ -40,14 +38,12 @@ class HeaderScrollView extends Component {
   render() {
     const {
       children,
-      headerText,
+      headerTitle,
       containerStyle,
       headerContainerStyle,
       headerComponentContainerStyle,
       headerTextStyle,
-      customHeaderComponent,
       headerTitleStyle,
-      customeHeaderTitleComponent,
       scrollContainerStyle
     } = this.props;
 
@@ -58,18 +54,16 @@ class HeaderScrollView extends Component {
       <View style={[styles.container, containerStyle]}>
         <View style={[styles.headerContainer, headerContainerStyle]}>
           <Fade visible={isHeaderScrolled}>
-            {customHeaderComponent || (
-              <View
-                style={[
-                  styles.headerComponentContainer,
-                  headerComponentContainerStyle
-                ]}
-              >
-                <Text style={[styles.headerText, headerTextStyle]}>
-                  {headerText}
-                </Text>
-              </View>
-            )}
+            <View
+              style={[
+                styles.headerComponentContainer,
+                headerComponentContainerStyle
+              ]}
+            >
+              <Text style={[styles.headerText, headerTextStyle]}>
+                {headerTitle}
+              </Text>
+            </View>
           </Fade>
         </View>
 
@@ -78,16 +72,14 @@ class HeaderScrollView extends Component {
           onScroll={this.handleScroll}
           style={scrollContainerStyle}
         >
-          {customeHeaderTitleComponent || (
-            <View>
-              <Text
-                style={[styles.headerTitle, headerTitleStyle]}
-                onLayout={this.onLayout}
-              >
-                {headerText}
-              </Text>
-            </View>
-          )}
+          <View>
+            <Text
+              style={[styles.headerTitle, headerTitleStyle]}
+              onLayout={this.onLayout}
+            >
+              {headerTitle}
+            </Text>
+          </View>
           {children}
         </ScrollView>
       </View>
