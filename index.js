@@ -1,47 +1,39 @@
-// @flow
-import React, { Component, type Node } from 'react';
-import { View, ScrollView, Text } from 'react-native';
-import Fade from 'react-native-fade';
-import styles from './styles';
+import React, { Component, type Node } from "react";
+import PropTypes from "prop-types";
+import { View, ScrollView, Text } from "react-native";
+import Fade from "react-native-fade";
+import styles from "./styles";
 
-type Props = {
-  headerText?: string,
-  children?: Node,
-  containerStyle?: Object,
-  headerContainerStyle?: Object,
-  headerComponentContainerStyle?: Object,
-  headerTextStyle?: Object,
-  customHeaderComponent?: Node,
-  customeHeaderTitleComponent?: Node,
-  headerTitleStyle?: Object,
-  scrollContainerStyle?: Object,
-};
-
-type State = {
-  scrollOffset: number,
-  headerHeight: number,
-  headerY: number,
-};
-
-class HeaderScrollView extends Component<Props, State> {
-  static propTypes = {};
+class HeaderScrollView extends Component {
+  static propTypes = {
+    headerText: PropTypes.string,
+    children: PropTypes.node,
+    containerStyle: PropTypes.object,
+    headerContainerStyle: PropTypes.object,
+    headerComponentContainerStyle: PropTypes.object,
+    headerTextStyle: PropTypes.object,
+    customHeaderComponent: PropTypes.node,
+    customeHeaderTitleComponent: PropTypes.node,
+    headerTitleStyle: PropTypes.object,
+    scrollContainerStyle: PropTypes.object
+  };
 
   state = {
     scrollOffset: 0,
     headerHeight: 0,
-    headerY: 0,
+    headerY: 0
   };
 
-  handleScroll = (event: Object) => {
+  handleScroll = event => {
     this.setState({
-      scrollOffset: event.nativeEvent.contentOffset.y,
+      scrollOffset: event.nativeEvent.contentOffset.y
     });
   };
 
-  onLayout = (event: Object) => {
+  onLayout = event => {
     this.setState({
       headerHeight: event.nativeEvent.layout.height,
-      headerY: event.nativeEvent.layout.y,
+      headerY: event.nativeEvent.layout.y
     });
   };
 
@@ -56,7 +48,7 @@ class HeaderScrollView extends Component<Props, State> {
       customHeaderComponent,
       headerTitleStyle,
       customeHeaderTitleComponent,
-      scrollContainerStyle,
+      scrollContainerStyle
     } = this.props;
 
     const scrollHeaderOffset = this.state.headerHeight + this.state.headerY - 8;
@@ -70,7 +62,7 @@ class HeaderScrollView extends Component<Props, State> {
               <View
                 style={[
                   styles.headerComponentContainer,
-                  headerComponentContainerStyle,
+                  headerComponentContainerStyle
                 ]}
               >
                 <Text style={[styles.headerText, headerTextStyle]}>

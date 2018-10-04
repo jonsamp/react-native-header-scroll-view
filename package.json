@@ -9,9 +9,6 @@
     "react native",
     "component"
   ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jonsamp/react-native-header-scroll-view.git"
@@ -27,11 +24,8 @@
     "react-native": "*"
   },
   "dependencies": {
+    "prop-types": "^15.5.10",
     "react-native-fade": "1.0.1",
     "react-native-iphone-x-helper": "^1.2.0"
-  },
-  "devDependencies": {
-    "@babel/preset-flow": "7.0.0",
-    "flow-bin": "0.75.0"
   }
 }
