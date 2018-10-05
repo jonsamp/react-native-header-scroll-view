@@ -48,7 +48,7 @@ For default Apple-style settings, you only need to provide:
 
 | Prop         | Type   | Description                                                                                                                            |
 | ------------ | ------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `headerText` | string | The text of the header. This will show up as large text inside the scroll view and then fade in as the smaller text inside the header. |
+| `headerTitle` | string | The text of the header. This will show up as large text inside the scroll view and then fade in as the smaller text inside the header. |
 
 From there, you can further customize this component to get exactly what you need.
 
