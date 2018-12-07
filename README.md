@@ -2,7 +2,7 @@
 
 A React Native component that mimicks Apple's large header that fades in a smaller header as you scroll, and slightly expands as you scroll up. You can see this effect in Apple's Messages, Books, etc.
 
-![scrollheader gif](https://user-images.githubusercontent.com/6455018/49657127-ee568800-fa0c-11e8-95cb-42645b4cda49.gif)
+![header scroll view gif](https://user-images.githubusercontent.com/6455018/49658165-6c1b9300-fa0f-11e8-9dd9-6d2ac53fe5e9.gif)
 
 ## Installation
 
