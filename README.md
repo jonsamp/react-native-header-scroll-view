@@ -1,8 +1,6 @@
 # react-native-header-scroll-view
 
-A React Native component that creates a Apple-esque large header that fades in a smaller header as you scroll.
-
-Apple features this UI pattern in Apple Music and Books.
+A React Native component that mimicks Apple's large header that fades in a smaller header as you scroll, and slightly expands as you scroll up. You can see this effect in Apple's Messages, Books, etc.
 
 ![scrollheader](https://user-images.githubusercontent.com/6455018/46266839-15ba4180-c500-11e8-8c6c-df1d6b22e2bb.gif)
 
@@ -19,7 +17,7 @@ npm install react-native-header-scroll-view --save
 Then, import with:
 
 ```js
-import Fade from "react-native-header-scroll-view";
+import Fade from 'react-native-header-scroll-view';
 ```
 
 ## Usage
@@ -27,14 +25,14 @@ import Fade from "react-native-header-scroll-view";
 Example usage:
 
 ```js
-import React, { Component } from "react";
-import { View, Text, Button } from "react-native";
-import HeaderScrollView from "react-native-header-scroll-view";
+import React, { Component } from 'react';
+import { View, Text, Button } from 'react-native';
+import HeaderScrollView from 'react-native-header-scroll-view';
 
 class App extends Component {
   render() {
     return (
-      <HeaderScrollView headerText="❤️ For You">
+      <HeaderScrollView title="❤️ For You">
         <Text>...</Text>
       </HeaderScrollView>
     );
@@ -46,8 +44,8 @@ class App extends Component {
 
 For default Apple-style settings, you only need to provide:
 
-| Prop         | Type   | Description                                                                                                                            |
-| ------------ | ------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Prop          | Type   | Description                                                                                                                            |
+| ------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------- |
 | `headerTitle` | string | The text of the header. This will show up as large text inside the scroll view and then fade in as the smaller text inside the header. |
 
 From there, you can further customize this component to get exactly what you need.

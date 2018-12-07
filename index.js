@@ -61,15 +61,15 @@ class HeaderScrollView extends Component {
   render() {
     const {
       children,
-      title,
-      containerStyle,
-      headerContainerStyle,
-      headerComponentContainerStyle,
-      headlineStyle,
-      titleStyle,
-      scrollContainerStyle,
+      title = '',
+      containerStyle = {},
+      headerContainerStyle = {},
+      headerComponentContainerStyle = {},
+      headlineStyle = {},
+      titleStyle = {},
+      scrollContainerStyle = {},
       fadeDirection,
-      scrollViewProps,
+      scrollViewProps = {},
     } = this.props;
 
     const fontSize = titleStyle.fontSize || 34;
