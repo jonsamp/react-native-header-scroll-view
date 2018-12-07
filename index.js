@@ -62,11 +62,11 @@ class HeaderScrollView extends Component {
     const {
       children,
       title = '',
+      titleStyle = {},
       containerStyle = {},
       headerContainerStyle = {},
       headerComponentContainerStyle = {},
       headlineStyle = {},
-      titleStyle = {},
       scrollContainerStyle = {},
       fadeDirection,
       scrollViewProps = {},

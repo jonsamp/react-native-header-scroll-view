@@ -2,7 +2,7 @@
 
 A React Native component that mimicks Apple's large header that fades in a smaller header as you scroll, and slightly expands as you scroll up. You can see this effect in Apple's Messages, Books, etc.
 
-![scrollheader](https://user-images.githubusercontent.com/6455018/46266839-15ba4180-c500-11e8-8c6c-df1d6b22e2bb.gif)
+![scrollheader gif](https://user-images.githubusercontent.com/6455018/49657127-ee568800-fa0c-11e8-95cb-42645b4cda49.gif)
 
 ## Installation
 
@@ -17,7 +17,7 @@ npm install react-native-header-scroll-view --save
 Then, import with:
 
 ```js
-import Fade from 'react-native-header-scroll-view';
+import HeaderScrollView from 'react-native-header-scroll-view';
 ```
 
 ## Usage
@@ -26,13 +26,13 @@ Example usage:
 
 ```js
 import React, { Component } from 'react';
-import { View, Text, Button } from 'react-native';
+import { Text } from 'react-native';
 import HeaderScrollView from 'react-native-header-scroll-view';
 
 class App extends Component {
   render() {
     return (
-      <HeaderScrollView title="❤️ For You">
+      <HeaderScrollView title="For You">
         <Text>...</Text>
       </HeaderScrollView>
     );
@@ -44,17 +44,23 @@ class App extends Component {
 
 For default Apple-style settings, you only need to provide:
 
-| Prop          | Type   | Description                                                                                                                            |
-| ------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `headerTitle` | string | The text of the header. This will show up as large text inside the scroll view and then fade in as the smaller text inside the header. |
+| Prop    | Type   | Description                                                                                                                             |
+| ------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `title` | string | The title of the header. This will show up as large text inside the scroll view and then fade in as the smaller text inside the header. |
 
-From there, you can further customize this component to get exactly what you need.
+From there, you can customize this component to get exactly what you want.
 
 | Prop                            | Type                         | Description                                                                                                             |
 | ------------------------------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `titleStyle`                    | React Native style or Object | Styles the large header title component inside the scroll view.                                                         |
 | `containerStyle`                | React Native style or Object | Styles the entire container wrapping the header and the scrollview.                                                     |
 | `headerContainerStyle`          | React Native style or Object | Styles the container of the header component that appears after scrolling.                                              |
 | `headerComponentContainerStyle` | React Native style or Object | Styles the component inside the header. Anything within this style will fade in and out as the scroll position changes. |
-| `headerTextStyle`               | React Native style or Object | Styles the header text inside the header that appears after scrolling.                                                  |
-| `headerTitleStyle`              | React Native style or Object | Styles the header title component inside the scroll view.                                                               |
+| `headlineStyle`                 | React Native style or Object | Styles the header text inside the header that appears after scrolling.                                                  |
 | `scrollContainerStyle`          | React Native style or Object | Styles the scroll view component.                                                                                       |
+| `fadeDirection`                 | String                       | When the header component fades, it can fade `'up'` or `'down'`,                                                        |
+| `scrollViewProps`               | Object                       | Pass any extra props to the scrollView.                                                                                 |
+
+Visual reference of the styles containers:
+
+<img width="1013" alt="screen shot 2018-12-07 at 10 55 25 am" src="https://user-images.githubusercontent.com/6455018/49657862-9de02a00-fa0e-11e8-8f10-37ada69d917d.png">
