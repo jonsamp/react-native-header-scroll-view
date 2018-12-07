@@ -2,37 +2,10 @@
 # yarn lockfile v1
 
 
-"@babel/helper-plugin-utils@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.0.0.tgz#bbb3fbee98661c569034237cc03967ba99b4f250"
-
-"@babel/plugin-syntax-flow@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-flow/-/plugin-syntax-flow-7.0.0.tgz#70638aeaad9ee426bc532e51523cff8ff02f6f17"
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.0.0"
-
-"@babel/plugin-transform-flow-strip-types@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-flow-strip-types/-/plugin-transform-flow-strip-types-7.0.0.tgz#c40ced34c2783985d90d9f9ac77a13e6fb396a01"
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.0.0"
-    "@babel/plugin-syntax-flow" "^7.0.0"
-
-"@babel/preset-flow@7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@babel/preset-flow/-/preset-flow-7.0.0.tgz#afd764835d9535ec63d8c7d4caf1c06457263da2"
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.0.0"
-    "@babel/plugin-transform-flow-strip-types" "^7.0.0"
-
-flow-bin@0.75.0:
-  version "0.75.0"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.75.0.tgz#b96d1ee99d3b446a3226be66b4013224ce9df260"
-
-react-native-fade@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/react-native-fade/-/react-native-fade-1.0.1.tgz#518ca079ac1df3d6ae734ec42ef28296c97429de"
+react-native-fade@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-fade/-/react-native-fade-1.0.3.tgz#e27cd5a75c0d09a9ee82d854fb3851006c228d23"
+  integrity sha512-MVqjYVxzuUBDjkgMygZKJIkrsM3WI1SqwFc+7nTR72bUcn6HpqCDHH5ZfUT2H5dqKDtndvNkRtNER9PZr9yGTA==
 
 react-native-iphone-x-helper@^1.2.0:
   version "1.2.0"

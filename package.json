@@ -20,12 +20,12 @@
   },
   "homepage": "https://github.com/jonsamp/react-native-header-scroll-view",
   "peerDependencies": {
+    "prop-types": "*",
     "react": "*",
-    "react-native": "*",
-    "prop-types": "*"
+    "react-native": "*"
   },
   "dependencies": {
-    "react-native-fade": "1.0.2",
+    "react-native-fade": "^1.0.3",
     "react-native-iphone-x-helper": "^1.2.0"
   }
 }
