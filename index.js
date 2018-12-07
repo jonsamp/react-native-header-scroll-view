@@ -20,6 +20,10 @@ class HeaderScrollView extends Component {
     scrollViewProps: PropTypes.object,
   };
 
+  static defaultProps = {
+    scrollViewProps: {},
+  };
+
   state = {
     headerHeight: 0,
     headerY: 0,
@@ -65,6 +69,7 @@ class HeaderScrollView extends Component {
       titleStyle,
       scrollContainerStyle,
       fadeDirection,
+      scrollViewProps,
     } = this.props;
 
     const fontSize = titleStyle.fontSize || 34;
