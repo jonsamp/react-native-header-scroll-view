@@ -4,7 +4,7 @@ import { ifIphoneX } from 'react-native-iphone-x-helper';
 const headerHeight = ifIphoneX(88, 60);
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: 'white' },
+  container: { flex: 1, backgroundColor: 'transparent' },
   headerContainer: {
     height: headerHeight,
   },
@@ -14,16 +14,16 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     paddingBottom: 12,
   },
-  headerText: {
-    color: 'black',
-    fontWeight: '500',
+  headline: {
     fontSize: 17,
+    lineHeight: 22,
+    fontWeight: '500',
+    letterSpacing: 0.019,
   },
-  headerTitle: {
-    fontWeight: 'bold',
-    fontSize: 36,
+  title: {
+    letterSpacing: 0.011,
+    fontWeight: '700',
     marginLeft: 16,
-    marginBottom: 16,
   },
 });
 
