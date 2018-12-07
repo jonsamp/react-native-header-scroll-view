@@ -75,7 +75,7 @@ class HeaderScrollView extends Component {
     const fontSize = titleStyle.fontSize || 34;
     const titleStyles = {
       fontSize,
-      linHeight: fontSize * 1.2,
+      lineHeight: fontSize * 1.2,
     };
 
     const animatedFontSize = this.scrollAnimatedValue.interpolate({
