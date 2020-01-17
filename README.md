@@ -40,6 +40,30 @@ class App extends Component {
 }
 ```
 
+To use this component with React Navigation, you'd want to disable the built-in header. There are 2 ways to disable the header in React Navigation:
+
+Disable the default header for one screen:
+
+```js
+static navigationOptions = {
+  headerShown: false
+};
+```
+
+Disable header globally in `createStackNavigator`:
+
+```js
+const Home = createStackNavigator(
+  {
+    ExampleScreen1,
+    ExampleScreen1,
+  },
+  {
+    headerMode: 'none',
+  }
+);
+```
+
 ## Props
 
 For default Apple-style settings, you only need to provide:
