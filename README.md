@@ -1,5 +1,15 @@
 # react-native-header-scroll-view
 
+---
+
+[🚨 DEPRECATED and unmaintained 🚨]
+This library is an emulation of native iOS large headers. Now you can access the real thing with [react-native-screens/native-stack](https://github.com/software-mansion/react-native-screens/tree/master/native-stack). This library is a drop-in replacement for React Navigation's stack view, and includes direct access to native large headers/transitions etc. It has awesome performance. 
+
+You can see it in action in this app: [github](https://github.com/jonsamp/gray-one), [download on the app stores](https://jovial-sammet-3cec91.netlify.app/).
+
+---
+
+
 A React Native component that mimicks Apple's large header that fades in a smaller header as you scroll, and slightly expands as you scroll up. You can see this effect in Apple's Messages, Books, etc.
 
 ![header scroll view gif](https://user-images.githubusercontent.com/6455018/49658165-6c1b9300-fa0f-11e8-9dd9-6d2ac53fe5e9.gif)
