@@ -2,7 +2,8 @@
 
 ---
 
-[🚨 DEPRECATED and unmaintained 🚨]
+🚨 DEPRECATED and unmaintained 🚨
+
 This library is an emulation of native iOS large headers. Now you can access the real thing with [react-native-screens/native-stack](https://github.com/software-mansion/react-native-screens/tree/master/native-stack). This library is a drop-in replacement for React Navigation's stack view, and includes direct access to native large headers/transitions etc. It has awesome performance. 
 
 You can see it in action in this app: [github](https://github.com/jonsamp/gray-one), [download on the app stores](https://jovial-sammet-3cec91.netlify.app/).
